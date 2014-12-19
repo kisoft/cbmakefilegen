@@ -1,0 +1,62 @@
+# A simple makefile generator by KiSoft, 2008. mailto: kisoft@rambler.ru
+# version: 0.3.12.3
+
+# Project Variables start
+CPP=mingw32-g++.exe
+CC=mingw32-gcc.exe
+LD=mingw32-g++.exe
+LIB=ar.exe
+WINDRES=windres.exe
+# Project Variables end
+
+# Target: default
+
+OBJS_DEFAULT=..\..\..\.objs\plugins\contrib\cbmakegen\Rule.o ..\..\..\.objs\plugins\contrib\cbmakegen\Makefile.o ..\..\..\.objs\plugins\contrib\cbmakegen\cbMakefileGen.o ..\..\..\.objs\plugins\contrib\cbmakegen\cbmakefilecfg.o ..\..\..\.objs\plugins\contrib\cbmakegen\cbmakefileconsole.o ..\..\..\.objs\plugins\contrib\cbmakegen\cbmakefilegencons.o ..\..\..\.objs\plugins\contrib\cbmakegen\Variable.o
+
+all: ../../../devel/share/CodeBlocks/plugins/cbMakefileGen.dll commandsafterbuild_default
+
+.PHONY: commandsafterbuild_default
+
+commandsafterbuild_default: 
+	@zip -j9 ..\..\..\devel\share\CodeBlocks\cbMakefileGen.zip manifest.xml
+
+../../../devel/share/CodeBlocks/plugins/cbMakefileGen.dll: $(OBJS_DEFAULT)
+	@echo Building dynamic library ..\..\..\devel\share\CodeBlocks\plugins\cbMakefileGen.dll
+	@mingw32-g++.exe -shared   -Wl,--dll -LC:\Devel\codeblocks\src\devel -LC:\Devel\wxWidgets-2.8.9\lib\gcc_dll -LC:\MinGW\lib  $(OBJS_DEFAULT)  -o ..\..\..\devel\share\CodeBlocks\plugins\cbMakefileGen.dll -s  -lcodeblocks -lwxmsw28u 
+
+..\..\..\.objs\plugins\contrib\cbmakegen\Rule.o: C:/Devel/codeblocks/src/plugins/contrib/cbmakegen/Rule.cpp
+	@echo Compiling: C:\Devel\codeblocks\src\plugins\contrib\cbmakegen\Rule.cpp
+	@mingw32-g++.exe -Wall  -pipe -mthreads -fmessage-length=0 -fexceptions -Winvalid-pch -DBUILDING_PLUGIN -DHAVE_W32API_H -D__WXMSW__ -DWXUSINGDLL -DCB_PRECOMP -DWX_PRECOMP -DwxUSE_UNICODE -DcbDEBUG    -IC:\Devel\codeblocks\src\include -IC:\Devel\codeblocks\src\include\wxscintilla\include -IC:\Devel\wxWidgets-2.8.9\include -IC:\Devel\wxWidgets-2.8.9\lib\gcc_dll\mswu -IC:\MinGW\include  -c C:\Devel\codeblocks\src\plugins\contrib\cbmakegen\Rule.cpp -o ..\..\..\.objs\plugins\contrib\cbmakegen\Rule.o
+
+..\..\..\.objs\plugins\contrib\cbmakegen\Makefile.o: C:/Devel/codeblocks/src/plugins/contrib/cbmakegen/Makefile.cpp
+	@echo Compiling: C:\Devel\codeblocks\src\plugins\contrib\cbmakegen\Makefile.cpp
+	@mingw32-g++.exe -Wall  -pipe -mthreads -fmessage-length=0 -fexceptions -Winvalid-pch -DBUILDING_PLUGIN -DHAVE_W32API_H -D__WXMSW__ -DWXUSINGDLL -DCB_PRECOMP -DWX_PRECOMP -DwxUSE_UNICODE -DcbDEBUG    -IC:\Devel\codeblocks\src\include -IC:\Devel\codeblocks\src\include\wxscintilla\include -IC:\Devel\wxWidgets-2.8.9\include -IC:\Devel\wxWidgets-2.8.9\lib\gcc_dll\mswu -IC:\MinGW\include  -c C:\Devel\codeblocks\src\plugins\contrib\cbmakegen\Makefile.cpp -o ..\..\..\.objs\plugins\contrib\cbmakegen\Makefile.o
+
+..\..\..\.objs\plugins\contrib\cbmakegen\cbMakefileGen.o: C:/Devel/codeblocks/src/plugins/contrib/cbmakegen/cbMakefileGen.cpp
+	@echo Compiling: C:\Devel\codeblocks\src\plugins\contrib\cbmakegen\cbMakefileGen.cpp
+	@mingw32-g++.exe -Wall  -pipe -mthreads -fmessage-length=0 -fexceptions -Winvalid-pch -DBUILDING_PLUGIN -DHAVE_W32API_H -D__WXMSW__ -DWXUSINGDLL -DCB_PRECOMP -DWX_PRECOMP -DwxUSE_UNICODE -DcbDEBUG    -IC:\Devel\codeblocks\src\include -IC:\Devel\codeblocks\src\include\wxscintilla\include -IC:\Devel\wxWidgets-2.8.9\include -IC:\Devel\wxWidgets-2.8.9\lib\gcc_dll\mswu -IC:\MinGW\include  -c C:\Devel\codeblocks\src\plugins\contrib\cbmakegen\cbMakefileGen.cpp -o ..\..\..\.objs\plugins\contrib\cbmakegen\cbMakefileGen.o
+
+..\..\..\.objs\plugins\contrib\cbmakegen\cbmakefilecfg.o: C:/Devel/codeblocks/src/plugins/contrib/cbmakegen/cbmakefilecfg.cpp
+	@echo Compiling: C:\Devel\codeblocks\src\plugins\contrib\cbmakegen\cbmakefilecfg.cpp
+	@mingw32-g++.exe -Wall  -pipe -mthreads -fmessage-length=0 -fexceptions -Winvalid-pch -DBUILDING_PLUGIN -DHAVE_W32API_H -D__WXMSW__ -DWXUSINGDLL -DCB_PRECOMP -DWX_PRECOMP -DwxUSE_UNICODE -DcbDEBUG    -IC:\Devel\codeblocks\src\include -IC:\Devel\codeblocks\src\include\wxscintilla\include -IC:\Devel\wxWidgets-2.8.9\include -IC:\Devel\wxWidgets-2.8.9\lib\gcc_dll\mswu -IC:\MinGW\include  -c C:\Devel\codeblocks\src\plugins\contrib\cbmakegen\cbmakefilecfg.cpp -o ..\..\..\.objs\plugins\contrib\cbmakegen\cbmakefilecfg.o
+
+..\..\..\.objs\plugins\contrib\cbmakegen\cbmakefileconsole.o: C:/Devel/codeblocks/src/plugins/contrib/cbmakegen/cbmakefileconsole.cpp
+	@echo Compiling: C:\Devel\codeblocks\src\plugins\contrib\cbmakegen\cbmakefileconsole.cpp
+	@mingw32-g++.exe -Wall  -pipe -mthreads -fmessage-length=0 -fexceptions -Winvalid-pch -DBUILDING_PLUGIN -DHAVE_W32API_H -D__WXMSW__ -DWXUSINGDLL -DCB_PRECOMP -DWX_PRECOMP -DwxUSE_UNICODE -DcbDEBUG    -IC:\Devel\codeblocks\src\include -IC:\Devel\codeblocks\src\include\wxscintilla\include -IC:\Devel\wxWidgets-2.8.9\include -IC:\Devel\wxWidgets-2.8.9\lib\gcc_dll\mswu -IC:\MinGW\include  -c C:\Devel\codeblocks\src\plugins\contrib\cbmakegen\cbmakefileconsole.cpp -o ..\..\..\.objs\plugins\contrib\cbmakegen\cbmakefileconsole.o
+
+..\..\..\.objs\plugins\contrib\cbmakegen\cbmakefilegencons.o: C:/Devel/codeblocks/src/plugins/contrib/cbmakegen/cbmakefilegencons.cpp
+	@echo Compiling: C:\Devel\codeblocks\src\plugins\contrib\cbmakegen\cbmakefilegencons.cpp
+	@mingw32-g++.exe -Wall  -pipe -mthreads -fmessage-length=0 -fexceptions -Winvalid-pch -DBUILDING_PLUGIN -DHAVE_W32API_H -D__WXMSW__ -DWXUSINGDLL -DCB_PRECOMP -DWX_PRECOMP -DwxUSE_UNICODE -DcbDEBUG    -IC:\Devel\codeblocks\src\include -IC:\Devel\codeblocks\src\include\wxscintilla\include -IC:\Devel\wxWidgets-2.8.9\include -IC:\Devel\wxWidgets-2.8.9\lib\gcc_dll\mswu -IC:\MinGW\include  -c C:\Devel\codeblocks\src\plugins\contrib\cbmakegen\cbmakefilegencons.cpp -o ..\..\..\.objs\plugins\contrib\cbmakegen\cbmakefilegencons.o
+
+..\..\..\.objs\plugins\contrib\cbmakegen\Variable.o: C:/Devel/codeblocks/src/plugins/contrib/cbmakegen/Variable.cpp
+	@echo Compiling: C:\Devel\codeblocks\src\plugins\contrib\cbmakegen\Variable.cpp
+	@mingw32-g++.exe -Wall  -pipe -mthreads -fmessage-length=0 -fexceptions -Winvalid-pch -DBUILDING_PLUGIN -DHAVE_W32API_H -D__WXMSW__ -DWXUSINGDLL -DCB_PRECOMP -DWX_PRECOMP -DwxUSE_UNICODE -DcbDEBUG    -IC:\Devel\codeblocks\src\include -IC:\Devel\codeblocks\src\include\wxscintilla\include -IC:\Devel\wxWidgets-2.8.9\include -IC:\Devel\wxWidgets-2.8.9\lib\gcc_dll\mswu -IC:\MinGW\include  -c C:\Devel\codeblocks\src\plugins\contrib\cbmakegen\Variable.cpp -o ..\..\..\.objs\plugins\contrib\cbmakegen\Variable.o
+
+.PHONY: clean_default
+
+clean_default: 
+	@echo Delete $(OBJS_DEFAULT) ..\..\..\devel\share\CodeBlocks\plugins\cbMakefileGen.dll
+	-@del /f $(OBJS_DEFAULT) ..\..\..\devel\share\CodeBlocks\plugins\cbMakefileGen.dll
+
+
+

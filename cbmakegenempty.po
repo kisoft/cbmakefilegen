@@ -1,0 +1,132 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-10-26 10:47+0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: cbmakefilecfg.cpp:33
+msgid "Filename :"
+msgstr ""
+
+#: cbmakefilecfg.cpp:35
+msgid "Overwrite if exists"
+msgstr ""
+
+#: cbmakefilecfg.cpp:37
+msgid "Add '@' prefix for commands"
+msgstr ""
+
+#: cbmakefilecfg.cpp:39
+msgid "Generate for all targets (else being used active target only)"
+msgstr ""
+
+#: Makefile.cpp:87
+msgid ""
+"Dependencies file (.depend) is absent!\n"
+"C::B MakefileGen could not complete the operation."
+msgstr ""
+
+#: Makefile.cpp:89 Makefile.cpp:205 Makefile.cpp:226 Makefile.cpp:515
+#: cbMakefileGen.cpp:122 cbMakefileGen.cpp:144
+msgid "Error"
+msgstr ""
+
+#: Makefile.cpp:180
+msgid "Dependencies file "
+msgstr ""
+
+#: Makefile.cpp:180
+msgid ""
+" is not exists!\n"
+"Dependencies must being created before use MakefileGen plugin.\n"
+"Continue anyway?"
+msgstr ""
+
+#: Makefile.cpp:183 Makefile.cpp:483
+msgid "Warning"
+msgstr ""
+
+#: Makefile.cpp:203
+msgid ""
+"Can't found an active target!\n"
+"C::B MakefileGen could not complete the operation."
+msgstr ""
+
+#: Makefile.cpp:224
+msgid ""
+"Can't found an compiler settings!\n"
+"C::B MakefileGen could not complete the operation."
+msgstr ""
+
+#: Makefile.cpp:356
+#, possible-c-format
+msgid "LinkerCmd: %s"
+msgstr ""
+
+#: Makefile.cpp:413
+#, possible-c-format
+msgid "CompilerCmd: %s"
+msgstr ""
+
+#: Makefile.cpp:482
+msgid "File "
+msgstr ""
+
+#: Makefile.cpp:482
+msgid ""
+" is exists!\n"
+"Overwrite?"
+msgstr ""
+
+#: Makefile.cpp:513
+msgid ""
+"Can't found targets!\n"
+"C::B MakefileGen could not complete the operation."
+msgstr ""
+
+#: cbMakefileGen.cpp:66
+msgid "Makefile generator configure"
+msgstr ""
+
+#: cbMakefileGen.cpp:88
+msgid "Project"
+msgstr ""
+
+#: cbMakefileGen.cpp:95
+msgid "Generate Makefile"
+msgstr ""
+
+#: cbMakefileGen.cpp:120
+msgid ""
+"You need to open a project\n"
+"before using the plugin!\n"
+"C::B MakefileGen could not complete the operation."
+msgstr ""
+
+#: cbMakefileGen.cpp:135
+msgid "C::B MakefileGen save : "
+msgstr ""
+
+#: cbMakefileGen.cpp:137
+msgid "Targets: "
+msgstr ""
+
+#: cbMakefileGen.cpp:139
+msgid "Info"
+msgstr ""
+
+#: cbMakefileGen.cpp:143
+msgid "C::B MakefileGen found errors, saves aborted."
+msgstr ""

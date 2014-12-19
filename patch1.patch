@@ -1,0 +1,12 @@
+Index: Makefile.hpp
+===================================================================
+--- Makefile.hpp	(revision 20)
++++ Makefile.hpp	(working copy)
+@@ -7,6 +7,7 @@
+ #include "Variable.hpp"
+ 
+ class cbProject;
++class Compiler;
+ 
+ #include <wx/arrimpl.cpp>
+ 

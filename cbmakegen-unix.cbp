@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="cbmakegen" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="default">
+				<Option output="~/.codeblocks/share/codeblocks/plugins/cbMakefileGen" prefix_auto="1" extension_auto="1" />
+				<Option object_output="." />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Option parameters="--debug-log --multiple-instance -ns -ni" />
+				<Option host_application="../../../devel/codeblocks" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="`pkg-config --cflags codeblocks`" />
+					<Add option="`wx-config --cflags`" />
+					<Add option="-s" />
+					<Add option="-fPIC" />
+					<Add directory="../../../" />
+				</Compiler>
+				<Linker>
+					<Add option="`pkg-config --libs codeblocks`" />
+					<Add option="`wx-config --libs`" />
+				</Linker>
+				<ExtraCommands>
+					<Add after="zip -j9 ~/.codeblocks/share/codeblocks/cbMakefileGen.zip manifest.xml" />
+					<Mode after="always" />
+				</ExtraCommands>
+			</Target>
+		</Build>
+		<Unit filename="Makefile.cpp">
+			<Option weight="30" />
+		</Unit>
+		<Unit filename="Makefile.hpp" />
+		<Unit filename="Rule.cpp">
+			<Option weight="17" />
+		</Unit>
+		<Unit filename="Rule.hpp" />
+		<Unit filename="Variable.cpp">
+			<Option weight="75" />
+		</Unit>
+		<Unit filename="Variable.hpp" />
+		<Unit filename="cbMakefileGen.cpp" />
+		<Unit filename="cbMakefileGen.h" />
+		<Unit filename="cbmakefilecfg.cpp" />
+		<Unit filename="cbmakefilecfg.h" />
+		<Unit filename="manifest.xml" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

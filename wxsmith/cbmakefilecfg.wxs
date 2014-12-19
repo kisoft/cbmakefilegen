@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<wxsmith>
+	<object class="wxPanel" name="cbmakefilecfg">
+		<size>573,123</size>
+		<object class="wxStaticText" name="ID_STATICTEXT1" variable="m_pStaticText1" member="yes">
+			<label>Filename :</label>
+			<pos>4,6</pos>
+		</object>
+		<object class="wxTextCtrl" name="ID_TEXTCTRL1" variable="m_pTCFilename" member="yes">
+			<value>Makefile.gen</value>
+			<pos>70,3</pos>
+			<size>500,21</size>
+		</object>
+		<object class="wxCheckBox" name="ID_CHECKBOX1" variable="m_pCBOverwrite" member="yes">
+			<label>Overwrite if exists</label>
+			<pos>70,48</pos>
+		</object>
+		<object class="wxCheckBox" name="ID_CHECKBOX2" variable="m_pCBSilence" member="yes">
+			<label>Add &apos;@&apos; prefix for commands</label>
+			<pos>70,68</pos>
+		</object>
+		<object class="wxCheckBox" name="ID_CHECKBOX3" variable="m_pCBAllTargets" member="yes">
+			<label>Generate for target &apos;All&apos; (else being used active target only)</label>
+			<pos>70,88</pos>
+		</object>
+		<object class="wxStaticText" name="ID_STATICTEXT2" variable="StaticText1" member="yes">
+			<label>NOTE: Filename can content macro $(proj__title). Will replaced with a project title.</label>
+			<pos>70,28</pos>
+			<fg>#C6413E</fg>
+		</object>
+	</object>
+</wxsmith>

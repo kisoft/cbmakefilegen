@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<BrowseTracker_layout_file>
+	<ActiveTarget name="default" />
+	<File name="Makefile.cpp" open="0" top="0" tabpos="1">
+		<Cursor position="393" topLine="465" />
+	</File>
+	<File name="cbMakefileGen.cpp" open="0" top="0" tabpos="3">
+		<Cursor position="359" topLine="18" />
+	</File>
+	<File name="version.h" open="0" top="0" tabpos="2">
+		<Cursor position="692" topLine="6" />
+	</File>
+</BrowseTracker_layout_file>

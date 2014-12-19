@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<wxsmith>
+	<object class="wxFrame" name="cbmakefilegencons">
+		<size>334,247</size>
+		<pos_arg>1</pos_arg>
+		<size_arg>1</size_arg>
+		<object class="wxBoxSizer" variable="BoxSizer1" member="yes">
+			<object class="sizeritem">
+				<object class="wxPanel" name="ID_PANEL1" variable="Panel1" member="yes">
+					<size>398,214</size>
+					<object class="wxBoxSizer" variable="BoxSizer2" member="yes">
+						<object class="sizeritem">
+							<object class="wxStaticText" name="ID_STATICTEXT1" variable="StaticText1" member="yes">
+								<label>Hello, World!</label>
+								<size>77,30</size>
+							</object>
+							<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+						</object>
+						<object class="sizeritem">
+							<object class="wxButton" name="ID_BUTTON1" variable="Button1" member="yes">
+								<label>Label</label>
+							</object>
+							<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+						</object>
+					</object>
+				</object>
+				<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+				<border>3</border>
+			</object>
+		</object>
+	</object>
+</wxsmith>
